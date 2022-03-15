@@ -1,3 +1,7 @@
+#Ülesanne2
+#Lauri Laanesoo
+#15.03.2022
+
 import turtle
 
 #aken
@@ -11,24 +15,19 @@ def viisnurk(pikkus):
         t.left(-144)
         
 viisnurk(100)
-varvid =('red','blue','orange','green')
-turtle.exitonclick()
 
-#Kolmnurk
+
+varvid =('red','blue','orange','green')
+def kolmnurk(pikk, varvid):
+    t = turtle.Turtle()
+    for i in range(3):
+        t.color(varvid)
+        t.forward(pikk)
+        t.left(-120)
+        
 
 kolmnurkpikkus = int(input("Sisesta kolmnurga külgede pikkus: "))
 kolmnurkvarv = input("Sisesta kolmnurga värv: ")
-
-def kolmnurk(pikk):
-    t = turtle.Turtle()
-    for i in range(3):
-        t.varvid(kolmnurkvarv)
-        t.forward(kolmnurkpikkus)
-        t.left(-120)
-        
-        
-kolmnurk(kolmnurkpikkus)
+kolmnurk(kolmnurkpikkus,kolmnurkvarv)
 
 turtle.exitonclick()
-        
-        
